@@ -1,0 +1,55 @@
+body{
+    background-color: rgba(12, 146, 141, 0.789);
+}
+.hide{
+    display: none;
+}
+
+.Columnar {
+    border: 2px solid black;
+    border-style: dotted;
+    margin: 2px;
+    background-color: rgb(231, 249, 167);
+    text-align: center;
+}
+@media  (min-width:951px){
+    h1{
+        color: red;
+    }
+    .Columnar{
+         display: inline-block;       
+         width: 18%; /* i have used 2px margin while creating div so i chose 18%*/
+        
+       
+    }
+    
+}
+@media (min-width:450px) and (max-width:951px){
+    h1{
+        color: purple;
+    }
+    .Columnar{ 
+        display: inline-block;      
+        width: 30.33%; 
+        
+       
+    }
+    
+}
+@media (max-width:450px){
+    h1{
+        color: pink;
+    }
+    .Columnar{       
+        width: 100%; 
+       
+    }
+    
+}
+/* Query to change the css when the device is landscape*/
+@media  (orientation: landscape) {
+    
+    .hide{
+        display:block;
+    }
+  }
